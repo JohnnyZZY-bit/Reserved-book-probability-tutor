@@ -1,7 +1,5 @@
 # Reserved Book Probability Tutor
 
-README prose word count: [count after final edits]
-
 ## Project status
 
 This work prototype based on Streamlit guides learners to solve a conditional probability problem related to library book reservations. It checks the reservation quantity, sampling group, and final probability. If any information is missing, it will ask follow-up questions. For identifiable errors, learners can request more specific hints. This exercise uses fictional data and deterministic rules, and is accompanied by preset feedback. More exercises, free text reasoning, and learning outcome assessment remain future work.
@@ -16,10 +14,10 @@ This work prototype based on Streamlit guides learners to solve a conditional pr
 
 Use PowerShell from the repository root. Set $basePython to the path of a working Python 3.13 interpreter on your computer.
 
-$labPython = "$env:APPDATA\uv\python\cpython-3.13.3-windows-x86_64-none\python.exe"
-& $basePython -m venv .venv
-& ".\.venv\Scripts\python.exe" -m pip install -r requirements.txt
-& ".\.venv\Scripts\python.exe" -m streamlit run app.py
+- $labPython = "$env:APPDATA\uv\python\cpython-3.13.3-windows-x86_64-none\python.exe"
+- & $basePython -m venv .venv
+- & ".\.venv\Scripts\python.exe" -m pip install -r requirements.txt
+- & ".\.venv\Scripts\python.exe" -m streamlit run app.py
 
 Open the local address printed in the terminal. Check app.py to understand the interface, and view tutor.py to learn about the evaluation rules and feedback.
 
